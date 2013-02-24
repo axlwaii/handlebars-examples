@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+    <script src="lib/handlebars.js"></script>
+    <script src="js/data.js"></script>
+    <title>Simple Example without jquery </title>
+  </head>
+  <body>
+    <h1>People</h1>
+    <div id="content">
+    <script id="people-template" type="text/x-handlebars-template">
+      <table>
+        <thead>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>City</th>
+        </thead>
+        <tbody>
+          {{#people}}
+            <tr>
+              <td>{{firstname}}</td>
+              <td>{{lastname}}</td>
+              <td>{{city}}</td>
+            </tr>
+          {{/people}}
+        </tbody>
+      </table>
+    </script>
+    </div>
+  </body>
+</html>
